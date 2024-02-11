@@ -1,0 +1,23 @@
+.container {
+    max-width: 600px; /* Added to limit the maximum width of the container */
+}
+.form-control {
+    margin-top: 15px; /* Added to create space between elements */
+}
+#result { /* Added custom CSS rule for the result */
+    margin-top: 45px;
+}
+h1 {
+    color: #007BFF; /* Change the color to Bootstrap primary blue */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a subtle text shadow */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding */
+}
+.btn {
+    margin-top: 30px;
+}
+
+.logo {
+    margin-top: 45px;
+}

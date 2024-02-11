@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KBLB Keyword Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vinorodrigues/bootstrap-dark@0.6.1/dist/bootstrap-dark.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="assets/logo-big.png" class="logo mx-auto d-block" alt="KBLB Logo" style="width: 20%;">
+                <h1>KBLB Keyword Checker</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <textarea id="word-input" class="form-control" rows="5" placeholder="Tempel/Paste teks kalian disini..."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <select id="word-list-select" class="form-control">
+                    <option value="list1">Comment</option>
+                    <option value="list2">Post</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button id="check-button" class="btn btn-primary btn-block">Periksa Teks</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="result" class="alert" role="alert"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
