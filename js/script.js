@@ -33,3 +33,28 @@ checkButton.addEventListener('click', () => {
         result.classList.remove('alert-warning'); // Remove danger class if it exists
     }
 });
+
+const placeholderTexts = [
+    "Jadi gini le...",
+    "Stress le dikejer pinjol...",
+    "Kalian lagi ngapain le...",
+    "Kok belum tidur le...",
+    "Gabut le...",
+    // Add more texts as needed
+];
+
+function updatePlaceholderText() {
+   const inputElement = document.getElementById("word-input");
+   const randomIndex = Math.floor(Math.random() * placeholderTexts.length);
+    inputElement.placeholder = placeholderTexts[randomIndex];
+}
+
+const interval = 1500; // Keep the interval value
+let timeoutId;
+
+function frameLoop() {
+  updatePlaceholderText();
+  timeoutId = setTimeout(frameLoop, interval);
+}
+
+timeoutId = setTimeout(frameLoop, interval);
