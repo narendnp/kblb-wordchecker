@@ -2,10 +2,11 @@
 Word checker untuk keywords yang dilarang digunakan di grup KBLB.
 
 ## Cara Memakai
-1. Ketikkan atau copy-paste teks yang ingin di cek.
-2. Pilih jenis teks (Post atau Komentar).
-3. Klik **Periksa Teks**.
-4. Jika ada kata yang masuk dalam daftar kata yang dilarang digunakan, kata tersebut akan dimunculkan.
+1. Buka halaman [ini](https://narendnp.github.io/kblb-wordchecker/)
+2. Ketikkan atau copy-paste teks yang ingin di cek.
+3. Pilih jenis teks (Post atau Komentar).
+4. Klik **Periksa Teks**.
+5. Jika ada kata yang masuk dalam daftar kata yang dilarang digunakan, kata tersebut akan dimunculkan.
 
 ## Cara Kerja
 Setiap kata yang ada didalam teks yang diinputkan akan di crosscheck dengan daftar kata yang ada di repositori [ini](https://github.com/narendnp/kblb-banned-words).
