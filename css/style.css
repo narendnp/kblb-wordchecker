@@ -40,3 +40,15 @@ h1 {
     line-height: inherit;
     padding: .5rem 1rem;
 }
+
+.header-container {
+    max-width: 90% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer-container {
+    max-width: 90% !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
