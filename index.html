@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 <head>
     <title>KBLB Keyword Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vinorodrigues/bootstrap-dark@0.6.1/dist/bootstrap-dark.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+        <img src="assets/logo-big.png" alt="Keluh Basah Lele Berulah" height="40">
+    </a>
+    <div class="navbar-nav flex-row">
+        <a class="nav-link mr-3" href="https://facebook.com/groups/kblbv3" target="_blank">KBLB Group</a>
+        <a class="nav-link mr-3" href="https://facebook.com/keluhbasahdramale" target="_blank">KBDL Fanpage</a>
+        <a class="nav-link mr-3" href="https://github.com/narendnp/kblb-wordchecker" target="_blank">Source Code</a>
+    </div>
+  </nav>
+  <body class="d-flex flex-column h-100">
+    <div class="container flex-grow-1">
         <div class="row">
             <div class="col-12">
                 <img src="assets/logo-big.png" class="logo mx-auto d-block" alt="KBLB Logo" style="width: 20%;">
@@ -40,7 +50,11 @@
             </div>
         </div>
     </div>
-
+    <footer class="footer mt-auto py-3 bg-primary">
+        <div class="container text-white text-center">
+          <span class="text-white">Made with ❤ by Peternak Lele</span>
+        </div>
+      </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

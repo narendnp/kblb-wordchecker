@@ -1,18 +1,18 @@
 .container {
-    max-width: 600px; /* Added to limit the maximum width of the container */
+    max-width: 600px; 
 }
 .form-control {
-    margin-top: 15px; /* Added to create space between elements */
+    margin-top: 15px;
 }
-#result { /* Added custom CSS rule for the result */
+#result { 
     margin-top: 45px;
 }
 h1 {
-    color: #007BFF; /* Change the color to Bootstrap primary blue */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a subtle text shadow */
-    font-weight: bold; /* Make the text bold */
-    text-align: center; /* Center the text */
-    padding: 20px; /* Add some padding */
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
 }
 .btn {
     margin-top: 30px;
@@ -20,4 +20,23 @@ h1 {
 
 .logo {
     margin-top: 45px;
+}
+
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link {
+    line-height: inherit;
+    padding: .5rem 1rem;
 }
