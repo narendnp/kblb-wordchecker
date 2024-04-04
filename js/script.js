@@ -43,6 +43,28 @@ checkButton.addEventListener('click', () => {
     }
 });
 
+function copyText() {
+  const cb = navigator.clipboard;
+  cb.writeText(wordInput.value);
+  alert("Teks telah di salin ke clipboard");
+}
+
+function pasteText() {
+  if (navigator.clipboard && navigator.clipboard.readText) {
+    navigator.clipboard.readText()
+      .then(text => {
+        wordInput.focus();
+        wordInput.value = text;
+      })
+      .catch(err => {
+        console.log('Failed to read clipboard contents: ', err);
+      });
+  } else {
+    wordInput.focus();
+    document.execCommand("paste");
+  }
+}
+
 function updatePlaceholderText() {
   const inputElement = document.getElementById("word-input");
   const placeholderTexts = [

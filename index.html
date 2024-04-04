@@ -7,6 +7,10 @@
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vinorodrigues/bootstrap-dark@0.6.1/dist/bootstrap-dark.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
@@ -17,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse dm-sans-medium" id="navbarNav">
                 <div class="navbar-nav flex-row ml-auto">
                     <a class="nav-link mr-3" href="https://facebook.com/groups/kblbv3" target="_blank">KBLB Group</a>
                     <a class="nav-link mr-3" href="https://facebook.com/keluhbasahdramale" target="_blank">KBDL Fanpage</a>
@@ -26,7 +30,7 @@
             </div>
         </div>
     </nav>
-    <div class="container flex-grow-1">
+    <div class="container flex-grow-1 dm-sans-bold">
         <div class="row">
             <div class="col-12">
                 <img src="assets/logo-big.png" class="logo mx-auto d-block" alt="KBLB Logo" style="width: 20%;">
@@ -39,20 +43,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <select id="word-list-select" class="form-control">
+            <div class="col-12 d-flex">
+                <button id="copy-button" class="fa-solid fa-copy btn btn-primary p-2" data-toggle="tooltip" data-placement="bottom" title="Salin teks" onclick="copyText()"></button>
+                <button id="paste-button" class="fa-regular fa-paste btn btn-primary p-2" data-toggle="tooltip" data-placement="bottom" title="Tempel teks" onclick="pasteText()"></button>
+                <select id="word-list-select" class="form-control post-comment-selector p-2">
                     <option value="list2">Post</option>
                     <option value="list1">Comment</option>
                 </select>
+                <button id="check-button" class="btn btn-primary btn-block ml-auto" disabled>Periksa Teks</button>
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <button id="check-button" class="btn btn-primary btn-block" disabled>Periksa Teks</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
+            <div class="col-12 dm-sans-regular">
                 <div id="result" class="alert" role="alert"></div>
             </div>
         </div>
@@ -63,6 +65,7 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   </body>
