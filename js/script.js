@@ -1,6 +1,7 @@
 const wordInput = document.getElementById('word-input');
 const checkButton = document.getElementById('check-button');
 const result = document.getElementById('result');
+const addinfo = document.getElementById('addinfo');
 const wordListSelect = document.getElementById('word-list-select');
 
 let wordListComment = [];
@@ -36,10 +37,12 @@ checkButton.addEventListener('click', () => {
         result.innerHTML = 'Kata yang dilarang digunakan: <strong>' + foundWords.join(', ') + '</strong>.';
         result.classList.add('alert-warning');
         result.classList.remove('alert-success');
+        addinfo.style.display = 'none';
     } else {
         result.innerHTML = 'Tidak terdapat kata yang dilarang digunakan.';
         result.classList.add('alert-success');
         result.classList.remove('alert-warning');
+        addinfo.style.display = 'block';
     }
 });
 
